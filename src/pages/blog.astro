@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
@@ -14,7 +15,7 @@ import Footer from "../components/Footer.astro";
     <title>Astro</title>
   </head>
   <body>
-    <Navigation />
+    <Header />
 
     <h1>我的 Astro 学习博客</h1>
     <p>在这里，我将分享我的 Astro 学习之旅。</p>
@@ -25,5 +26,9 @@ import Footer from "../components/Footer.astro";
     </ul>
 
     <Footer />
+
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
