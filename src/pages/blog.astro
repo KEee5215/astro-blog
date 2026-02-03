@@ -3,6 +3,10 @@ import "../styles/global.css";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import BlogPost from "../components/BlogPost.astro";
+const allPosts = Object.values(
+  import.meta.glob("./posts/*.md", { eager: true }),
+);
 ---
 
 <html lang="en">
@@ -20,9 +24,7 @@ import Header from "../components/Header.astro";
     <h1>我的 Astro 学习博客</h1>
     <p>在这里，我将分享我的 Astro 学习之旅。</p>
     <ul>
-      <li><a href="/posts/post-1/">文章 1</a></li>
-      <li><a href="/posts/post-2/">文章 2</a></li>
-      <li><a href="/posts/post-3/">文章 3</a></li>
+      {allPosts.map((post: any) => <BlogPost post={post} />)}
     </ul>
 
     <Footer />
