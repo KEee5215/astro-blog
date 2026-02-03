@@ -1,8 +1,9 @@
 ---
 import "../styles/global.css";
+import Greeting from "../components/Greeting.jsx";
 
 import BaseLayout from "../layouts/BaseLayout.astro";
-const pageTitle = "Astro";
+const pageTitle = "首页";
 ---
 
 <html lang="en">
@@ -12,11 +13,12 @@ const pageTitle = "Astro";
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <BaseLayout pageTitle={pageTitle}>
-      <h1>我的 Astro 站点</h1>
+      <h2>我的 Astro 站点</h2>
+      <Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
     </BaseLayout>
   </body>
 </html>
