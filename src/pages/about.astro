@@ -14,12 +14,7 @@ const identity = {
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Vue", "Astro"];
 
-const happy = true;
-const finished = true;
-const goal = 3;
-const day = 18;
-
-const skillColor = "pink";
+const skillColor = "green";
 const fontWeight = "bold";
 const textCase = "uppercase";
 ---
@@ -48,28 +43,19 @@ const textCase = "uppercase";
     <Header />
 
     <h1>{pageTitle}</h1>
-    <h2>……和我的新 Astro 网站！</h2>
+    <h2>……这里是KEee的自我介绍</h2>
     <ul>
       <li>我的网名是{identity.firstName}</li>
       <li>我来自{identity.country}</li>
       <li>我喜欢{identity.hobbies.join("和")}</li>
       <li class="skill">I learn {skills.join(",")}</li>
     </ul>
+    <img src="../img1.png" alt="" />
+    <p>我正在学习 Astro 的入门教程。这是介绍自己的界面</p>
 
     <p>
-      我正在学习 Astro
-      的入门教程。这是我网站上的第二个页面，也是我自己建立的第一页面！
+      众所周知,博客难在维护,难在更新。所有我希望我能坚持下去,分享我的学习经验。
     </p>
-
-    <p>
-      随着我完成更多教程，该站点将更新，所以请继续查看我的旅程将如何进行吧！
-    </p>
-
-    {happy && <p>我非常乐意学习 Astro！</p>}
-
-    {finished && <p>我完成了这节教程！</p>}
-
-    {goal === 3 ? <p>我的目标是在三天内完成。</p> : <p>我的目标是{day}天。</p>}
 
     <Footer />
 

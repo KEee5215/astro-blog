@@ -2,14 +2,25 @@
 import Social from "./Social.astro";
 ---
 
-<footer>
-  <Social platform="github" username="KEee5215" />
-</footer>
-
+<div class="footer">
+  <footer>
+    <Social platform="github" username="KEee5215" />
+  </footer>
+  <p>
+    &copy; {new Date().getFullYear()} KEee的博客。所有权利保留。
+  </p>
+</div>
 <style>
   footer {
     display: flex;
     gap: 1rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem;d */
+  }
+
+  .footer {
+    width: 100%;
+    height: 8rem;
+    /* background: rgba(100, 148, 237, 0.419); */
+    padding: 1rem;
   }
 </style>

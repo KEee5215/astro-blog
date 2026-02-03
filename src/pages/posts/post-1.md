@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "我的第一篇博客文章"
+title: "初试Astro"
 pubDate: 2026-02-02
 description: "这是我 Astro 博客的第一篇文章。"
 author: "Astro 学习者"
