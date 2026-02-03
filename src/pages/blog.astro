@@ -33,7 +33,7 @@ const allPosts = Object.values(
     <h1>我的博客列表</h1>
     <p>在这里，我将分享我的编程学习之旅。</p>
     <ul class="blog-list">
-      {allPosts.map((post: any) => <BlogPost post={post} />)}
+      {allPosts.map((post: any) => <BlogPost client:load post={post} />)}
     </ul>
 
     <Footer />
